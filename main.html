@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mail It</title>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="form">
+ <form method="post">
+   <input type="email" placeholder="E-Mail" id="email" class="email" required><br><br>
+   <input type="text" placeholder="Subject"id="subject" class="subject" required><br><br>
+   <textarea type="text" rows="10" placeholder="Body" id="body" class="body" required></textarea><br><br>
+  <input type="button" class="submit" id="submit" value="Send Email" onclick="send()" />
+</form>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

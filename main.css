@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+body{
+  text-align: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 17%, rgba(0,212,255,1) 100%);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.form{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  height: 400px;
+  width: 340px;
+  box-shadow: 0 10px 20px black;
+}
+.email{
+  position: absolute;
+  top: 15%;
+  width: 80%;
+  transform: translate(-50%);
+  height: 35px;
+  outline: none;
+  transition-duration: 0.5s;
+  border: 2px solid black;
+}
+.subject{
+  position: absolute;
+  height: 35px;
+  top: 30%;
+  width: 80%;
+  transform: translate(-50%);
+  outline: none;
+  transition-duration: 0.5s;
+  border: 2px solid black;
+}
+.body{
+  outline: none;
+  position: absolute;
+  height: 30%;
+  top: 45%;
+  width: 80%;
+  transform: translate(-50%);
+  transition-duration: 0.5s;
+  border: 2px solid black;
+}
+.submit{
+  position: absolute;
+  top: 80%;
+  transform: translate(-50%);
+  height: 10%;
+  width: 100px;
+  background-color: white;
+  border: 2px solid blue;
+  transition-duration: 0.4s;
+}
+.email:focus{
+  border: 3px solid blue;
+}
+.subject:focus{
+  border: 3px solid blue;
+}
+.body:focus{
+  border: 3px solid blue;
+}
+.email:hover{
+  border: 3px solid blue;
+}
+.subject:hover{
+  border: 3px solid blue;
+}
+.body:hover{
+  border: 3px solid blue;
+}
+.submit:hover{
+  background-color: blue;
+  color: white;
+}
+@media only screen and (min-width: 600px) {
+  .form{
+    width: 500px;
+    height: 500px;
+  }
+}
