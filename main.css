@@ -12,7 +12,7 @@ body{
   transform: translate(-50%,-50%);
   background-color: white;
   height: 400px;
-  width: 340px;
+  width: 90%;
   box-shadow: 0 10px 20px black;
 }
 .email{
